@@ -52,6 +52,7 @@ button,
 textarea {
 	font: 500 1.6rem Poppins;
 	/*Definindo como padrão, primeiro, digitamos o font-weight, depois o tamanho e depois a font family*/
+	color: var(--color-text-base);
 }
 
 .container {

@@ -1,8 +1,9 @@
 import React from 'react';
 
-
 import './styles.css';
+import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 import PageHeader from '../../components/pageHeader';
+import TeacherItem from '../../components/TeacherItem';
 
 function TeacherList() {
     return (
@@ -23,9 +24,13 @@ function TeacherList() {
                         <label htmlFor="time">Hora</label>
                         <input type="text" id="time" />
                     </div>
-
                 </form>
             </PageHeader>
+
+            <main>
+                <TeacherItem />
+            </main>
+
         </div>
     )
 }
