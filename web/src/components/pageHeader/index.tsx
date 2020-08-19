@@ -9,6 +9,7 @@ import './styles.css';
 
 interface PageHeaderProps {
     title: string;
+    description?: string; //dizendo que essa propriedade é uma opcional, identificado pelo ?:
 }
 
 const PageHeader: React.FC<PageHeaderProps> = (props) => {
@@ -23,6 +24,9 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
 
             <div className="header-content">
                 <strong>{props.title}</strong>
+                {props.description ? <p>{props.description}</p> : null}
+                {/*ou o código acima poderia ser escrito como {props.description && <p>{props.description}</p>
+                } basicamente, caso tenha uma descrição ela será 'true' e irá funcionar a condição*/}
                 {props.children}
             </div>
 
